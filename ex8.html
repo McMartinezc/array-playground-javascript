@@ -33,6 +33,7 @@
 
         // Resultado esperado: https://oscarm.tinytake.com/msc/ODgwNjcxNl8yMjIzNDgzMQ
         let seleccion = "default";
+        seleccion = estilosDisponibles.filter(estilo => estilo === "fancy");
 
         // No modificar a partir de aquí
         document.querySelector(".lorem").classList.add(seleccion);

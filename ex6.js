@@ -6,8 +6,8 @@ function existePez(listaPeces, pezBuscado) {
   let pezEncontrado = false;
   let i = 0;
 
-  while (!pezEncontrado && i < listaPeces.length - 1) {
-    pezEncontrado = listaPeces[i] == pezBuscado;
+  while (!pezEncontrado && i < listaPeces.length) {
+    pezEncontrado = listaPeces[i] === pezBuscado;
     i++;
   }
 
@@ -28,4 +28,6 @@ console.log("He encontrado al pez?: " + he_encontrado_al_pez);
  * 2. Un error lógico; que hace que el código no devuelve lo que debería devolver.
  *
  * Pon "chivatos" en el código para aydarte a averiguar que está sucediendo; o usa el depurador de Visual Studio para ejecutar el código paso a paso
+ * 
+ * En el bucle while, la condición i < listaPeces.length - 1 debería ser i < listaPeces.length. De lo contrario, el bucle se detendrá antes de verificar el último elemento del array. Cambia la condición para que el bucle itere sobre todos los elementos del array.
  */

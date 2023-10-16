@@ -11,7 +11,7 @@
  console.log("Nemo está en la posición: " + pezPosicion)
 
  /**
-  * Fíjate sin embargo qué valor arroja aplicar indexOf cuando buscamos a "estrella". CONTESTA: ¿Por qué crees que sucede esto?
+  * Fíjate sin embargo qué valor arroja aplicar indexOf cuando buscamos a "estrella". CONTESTA: ¿Por qué crees que sucede esto? -1 es que no encuentra el elemento dentro del array ya que estrella está como Estrella
   */
 
   let pezPosicion2 = muchos_peces.indexOf("estrella")
